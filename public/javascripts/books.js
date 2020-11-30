@@ -13,6 +13,11 @@ function PostBook()
     xhttp.onreadystatechange = function ReceivedCallback() {
         if (this.readyState === 4 && this.status === 200) {
             console.log(this.responseText);
+            document.getElementById("output").innerHTML = "Book Successfully Added";
+        } else if (this.status === 500) {
+            document.getElementById("output").innerHTML = "Form Data Missing";
+        } else if (this.status === 600) {
+            document.getElementById("output").innerHTML = "Incorrect ISBN Format";
         }
     };
     xhttp.open("POST", "https://hidden-plateau-59052.herokuapp.com/api/books/", true);
