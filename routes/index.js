@@ -44,6 +44,7 @@ router.get('/', function(req, res, next) {
       '</nav>'
   );
   res.write(
+      '<h1 style="text-align: center; padding-top: 10%">This is the Homepage - It is Beautiful</h1>' +
       '</body> \n' +
       '</html> \n'
   );

@@ -16,7 +16,7 @@
         }
     </style>
 </head>
-<body>
+<body onload="GetBook()">
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="#">Book Operations</a>
     <div class="collapse navbar-collapse" id="navbarNav">
@@ -41,9 +41,7 @@
 </nav>
 <div class="form-group">
     <form>
-        <div>
-            <button type="button" class="btn btn-primary" onclick="GetBook()">Display All Books</button><span class="validity"></span>
-        </div>
+        <h1>Current Library</h1><br>
         <div class="jumbotron" id="output"> </div>
     </form>
 </div>
